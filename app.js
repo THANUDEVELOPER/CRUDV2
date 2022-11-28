@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api/v1", authRouter);
 app.use("/api/v1/product", authentication, appRouter);
 app.get("/", (req, res) => {
-  res.send("CRUD APP V2");
+  res.send("CRUD APP Version 2 in RENDER cloud");
 });
 app.use(notFound);
 app.use(errorHandlerMiddleware);
