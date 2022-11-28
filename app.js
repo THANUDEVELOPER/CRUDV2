@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api/v1", authRouter);
 app.use("/api/v1/product", authentication, appRouter);
 app.get("/", (req, res) => {
-  res.send("CRUD API");
+  res.send("CRUD APP V2");
 });
 app.use(notFound);
 app.use(errorHandlerMiddleware);
